@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Fire Bet Pro | Command Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-cyan: #00f2ea;
+            --fire-glow: #ff4d00;
+            --deep-bg: #030508;
+        }
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--deep-bg);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .font-gaming {
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 0.1em;
+        }
+        .font-tech {
+            font-family: 'Exo 2', sans-serif;
+        }
+        .bg-gaming-gradient {
+            background: 
+                radial-gradient(circle at 50% -20%, rgba(255, 77, 0, 0.15), transparent),
+                radial-gradient(circle at 0% 100%, rgba(0, 242, 234, 0.05), transparent),
+                var(--deep-bg);
+        }
+        .glass-panel {
+            background: rgba(10, 15, 25, 0.6);
+            backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+        .fire-text {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 77, 0, 0.8), 0 0 20px rgba(255, 77, 0, 0.4);
+        }
+
+        /* Tactical Dot Masking */
+        .pin-mask-dots {
+            -webkit-text-security: circle;
+            font-family: 'Courier New', monospace !important;
+            font-size: 1.2rem !important;
+        }
+
+        @keyframes drift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-bg {
+            background: linear-gradient(-45deg, #030508, #0a0e14, #05080c, #030508);
+            background-size: 400% 400%;
+            animation: drift 15s ease infinite;
+        }
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030508;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ff4d00;
+            border-radius: 10px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.48.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gaming-gradient animated-bg">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
